@@ -8,26 +8,27 @@
 #
 
 # パッケージインストール
-%w{vim zsh}.each do |pkg|
+%w{vim zsh git}.each do |pkg|
     package pkg do
         action :install
     end
 end
 
-# グループ作成
-group "uochan" do
-    group_name   "uochan"
-    gid          999
-    action       [:create]
+git "/home/vagrant/.dotfiles" do
+    #repository "https://github.com/liquidz/dotfiles.git"
+    repository "git://github.com/liquidz/dotfiles.git"
+    reference "master"
+    action :sync
 end
 
-# ユーザ作成
-user "uochan" do
-    comment ""
-    home       "/home/uochan"
-    uid        999
-    group      "uochan"
-    shell      "/bin/zsh"
-    password   nil
-    supports   :manage_home => true
+bash "setting dot files" do
+    cwd "/home/vagrant"
+    #not_if "ls .vimrc"
+
+    code <<-EOC
+        ln -s .dotfiles/.gemrc     .
+        ln -s .dotfiles/.tmux.conf .
+        ln -s .dotfiles/.vimrc     .
+        ln -s .dotfiles/.zshrc     .
+    EOC
 end
