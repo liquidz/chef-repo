@@ -1,0 +1,6 @@
+default['leiningen']['script']      = 'https://raw.github.com/technomancy/leiningen/stable/bin/lein'
+default['leiningen']['home']        = '/home/vagrant'
+default['leiningen']['user']        = 'vagrant'
+default['leiningen']['group']       = 'vagrant'
+default['leiningen']['http_client'] = 'curl --insecure -f -L -o'
+default['leiningen']['https_proxy'] = ''
