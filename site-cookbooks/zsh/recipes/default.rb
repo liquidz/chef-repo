@@ -16,5 +16,4 @@ bash 'Change login shell to zsh' do
         chsh -s /bin/zsh #{node['zsh']['user']}
     EOT
     not_if 'test "/bin/zsh" = "$(grep ' + node['zsh']['user'] + ' /etc/passwd | cut -d: -f7)"'
-    #not_if 'test "/bin/zsh" = "$(grep #{node['zsh']['user']} /etc/passwd | cut -d: -f7)"'
 end
