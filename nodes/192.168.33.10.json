@@ -6,6 +6,8 @@
       , "recipe[java]"
       , "recipe[leiningen]"
       , "recipe[zsh]"
-      , "recipe[uochan]"
+
+      , "recipe[apache]"
+      , "recipe[dev]", "recipe[dev::cent6]", "recipe[dev::private]"
     ]
 }
