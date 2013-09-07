@@ -1,13 +1,15 @@
 {
     "run_list": [
-        "recipe[git]"
-      , "recipe[vim]"
-      , "recipe[vim::neobundle]"
-      , "recipe[java]"
-      , "recipe[leiningen]"
-      , "recipe[zsh]"
+        "recipe[yum::epel]"
+      //, "recipe[git]"
+      //, "recipe[vim]"
+      //, "recipe[vim::neobundle]"
+      //, "recipe[java]"
+      //, "recipe[leiningen]"
+      //, "recipe[zsh]"
 
-      , "recipe[apache]"
+      //, "recipe[apache]"
+      , "recipe[ruby::rbenv]"
       , "recipe[dev]", "recipe[dev::cent6]", "recipe[dev::private]"
     ]
 }
