@@ -9,7 +9,8 @@
       //, "recipe[zsh]"
 
       //, "recipe[apache]"
-      , "recipe[ruby::rbenv]"
-      , "recipe[dev]", "recipe[dev::cent6]", "recipe[dev::private]"
+      //, "recipe[ruby::rbenv]"
+      , "recipe[ruby::refe]"
+      //, "recipe[dev]", "recipe[dev::cent6]", "recipe[dev::private]"
     ]
 }
