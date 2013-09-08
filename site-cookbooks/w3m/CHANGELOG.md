@@ -1,0 +1,13 @@
+w3m CHANGELOG
+=============
+
+This file is used to list changes made in each version of the w3m cookbook.
+
+0.1.0
+-----
+- [your_name] - Initial release of w3m
+
+- - -
+Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
+
+The [Github Flavored Markdown page](http://github.github.com/github-flavored-markdown/) describes the differences between markdown on github and standard markdown.

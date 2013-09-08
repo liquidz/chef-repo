@@ -1,0 +1,16 @@
+{
+    "name"                : "vim-ref-docs"
+  , "default_attributes"  : {}
+  , "override_attributes" : {}
+  , "json_class"          : "Chef::Role"
+  , "description"         : ""
+  , "chef_type"           : "role"
+  , "run_list"            : [
+        "recipe[git]"
+      , "recipe[w3m]"
+      , "recipe[ruby::rbenv]"
+      , "recipe[ruby::refe]"
+      , "recipe[php::manual]"
+  ]
+}
+

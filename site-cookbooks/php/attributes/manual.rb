@@ -1,0 +1,5 @@
+default['php']['manual'] = 'http://jp2.php.net/get/php_manual_ja.tar.gz/from/jp1.php.net/mirror'
+default['php']['manual_home']  = '/home/vagrant/.vim/vim-ref'
+default['php']['manual_name'] = 'php-chunked-xhtml'
+default['php']['user']  = 'vagrant'
+default['php']['group'] = 'vagrant'
