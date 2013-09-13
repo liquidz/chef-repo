@@ -10,7 +10,7 @@
 
       //, "recipe[apache]"
       //, "recipe[ruby::rbenv]"
-      , "role[vim-ref-docs]"
+      //, "role[vim-ref-docs]"
       //, "recipe[php::manual]"
       //, "recipe[dev]", "recipe[dev::cent6]", "recipe[dev::private]"
     ]

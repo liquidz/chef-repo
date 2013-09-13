@@ -1,0 +1,23 @@
+{
+    "name"                : "uochan"
+  , "default_attributes"  : {}
+  , "override_attributes" : {}
+  , "json_class"          : "Chef::Role"
+  , "description"         : ""
+  , "chef_type"           : "role"
+  , "run_list"            : [
+        "recipe[yum::epel]"
+      , "recipe[zsh]"
+      , "recipe[tmux]"
+      , "recipe[git]"
+      , "recipe[vim]"
+      , "recipe[java]"
+      , "recipe[leiningen]"
+      , "recipe[dev]"
+      , "recipe[dev::cent6]"
+      , "role[vim-ref-docs]"
+      , "recipe[underscore.js]"
+      , "recipe[dev::private]"
+  ]
+}
+
