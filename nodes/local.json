@@ -1,0 +1,18 @@
+{
+    "run_list": [
+        "recipe[yum]",
+        "recipe[yum-uochan]",
+        "recipe[build-essential]",
+        "recipe[vim-uochan]"
+      //, "recipe[vim::neobundle]"
+      //, "recipe[java]"
+      //, "recipe[leiningen]"
+      //, "recipe[zsh]"
+
+      //, "recipe[apache]"
+      //, "recipe[ruby::rbenv]"
+      //, "role[vim-ref-docs]"
+      //, "recipe[php::manual]"
+      //, "recipe[dev]", "recipe[dev::cent6]", "recipe[dev::private]"
+    ]
+}

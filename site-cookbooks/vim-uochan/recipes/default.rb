@@ -11,6 +11,8 @@ package 'vim' do
     action :remove
 end
 
+%w{ncurses ncurses-devel}.each {|name| package name}
+
 %w{mercurial lua lua-devel}.each do |pkg_name|
     package pkg_name do
         action :install
@@ -45,5 +47,9 @@ bash "build vim from source" do
 make
 make install
 EOT
+end
+
+cookbook_file "vim-uochan.sh" do
+    path "/etc/profile.d/vim-uochan.sh"
 end
 
